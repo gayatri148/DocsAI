@@ -24,7 +24,7 @@ export function UserManager() {
   const [roleFilter, setRoleFilter] = useState<'all' | 'admin' | 'user'>('all')
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/auth/users')
+    fetch('https://docsai-fwpv.onrender.com/api/auth/users')
       .then(res => res.json())
       .then(data => setUsers(data))
       .catch(() => setUsers([]))

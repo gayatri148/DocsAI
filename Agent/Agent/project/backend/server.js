@@ -29,7 +29,7 @@ app.use('/api/documents', documentRoutes);
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://dbUser:1234567890@cluster0.rfglcjy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+mongoose.connect('mongodb+srv://dbUser:123456@cluster0.rfglcjy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
